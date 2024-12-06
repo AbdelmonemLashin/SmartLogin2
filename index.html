@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Smart Login</title>
+</head>
+
+<body>
+<!-- welcom -->
+    <div class="container w-100 vh-100 d-none justify-content-center align-items-center" id="welcom">
+        <div class="shadow-lg p-5 d-flex flex-column" id="welcomContent">
+            <!-- <h1 class="text-warning">Welcome Home</h1> -->
+            <button class="btn btn-outline-danger " id="logOut" onclick="logOut()">LogOut</button>
+        </div>
+      </div>
+
+
+
+
+<!-- login -->
+    <div class="container w-100 vh-100 d-flex justify-content-center align-items-center" id="login">
+        <div class="shadow-lg p-5 " id="loginContent">
+            <h1 class="text-center"> Smart Login System</h1>
+            <div class="form-group d-flex flex-column align-items-center">
+
+                <input type="email" class="form-control my-2" name="" id="emailLoginFromSignIn" aria-describedby="emailHelpId"
+                    placeholder="Enter Your Email">
+
+
+                <input type="password" class="form-control my-2" name="" id="passwordLoginFromSignIn" aria-describedby="emailHelpId"
+                    placeholder="Enter Your Password">
+                    <div id="warningLogin">
+                        <!-- <p class="text-center text-warning" >wrong Data</p> -->
+                    </div>
+
+                <button class="btn btn-outline-success my-3" id="loginBtnFromSignIn">Login</button>
+                <p class=" text-white">Don't have an account?</p>
+                <button class="btn text-white w-100" id="signUpBtnFromSignIn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+ 
+
+<!-- signUp -->
+    <div class="container w-100 vh-100 d-none justify-content-center align-items-center" id="signUp">
+        <div class="shadow-lg p-5 " id="signUpcontent">
+            <h1 class="text-center"> Smart SignUp System</h1>
+            <div class="form-group d-flex flex-column align-items-center">
+
+                <input type="text" class="form-control my-2" name="" id="nameLoginFromSignUp" aria-describedby="emailHelpId"
+                    placeholder="Enter Your Name">
+
+                <input type="email" class="form-control my-2" name="" id="emailLoginFromSignUp" aria-describedby="emailHelpId"
+                    placeholder="Enter Your Email">
+
+
+                <input type="password" class="form-control my-2" name="" id="passwordLoginFromSignUp" aria-describedby="emailHelpId"
+                    placeholder="Enter Your Password">
+<p class="text-center text-warning d-none" id="doneRegestration">Done...</p>
+                <button class="btn btn-outline-success my-3" id="signUpBtnFromsignUp">Sign Up</button>
+                <p class=" text-white">You have an account?</p>
+                <button class="btn text-white" id="signInBtnFromsignUp">Signin</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
